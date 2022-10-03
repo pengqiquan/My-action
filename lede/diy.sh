@@ -8,6 +8,7 @@ rm -rf package/feeds/packages/smartdns
 mkdir -p package/custom && cd package/custom
 git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns.git
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+git clone --depth=1 https://github.com/thinktip/luci-theme-neobird.git
 git clone --depth=1 https://github.com/pymumu/smartdns.git
 git clone --depth=1 https://github.com/vernesong/OpenClash.git
 git clone --depth=1 https://github.com/fw876/helloworld.git
