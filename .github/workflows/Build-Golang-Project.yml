@@ -36,7 +36,7 @@ jobs:
           upx -9 gogs -q
 
       - name: Upload Flies to Github Actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: Gogs
@@ -79,7 +79,7 @@ jobs:
           upx -9 gitea -q
 
       - name: Upload Flies to Github Actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: Gitea
@@ -111,7 +111,7 @@ jobs:
           bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/Golang-Project/Nps/build.sh)
 
       - name: Upload Flies to Github Actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: Nps
@@ -144,7 +144,7 @@ jobs:
           bash package.sh
 
       - name: Upload Flies to Github Actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: Frp

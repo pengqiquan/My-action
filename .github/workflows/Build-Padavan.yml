@@ -90,7 +90,7 @@ jobs:
           sudo mv -f images/*.trx /opt/images/
 
       - name: Upload packages
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: R2100-RM2100
@@ -189,7 +189,7 @@ jobs:
           sudo mv -f images/*.trx /opt/images/
 
       - name: Upload packages
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: R2100-RM2100
