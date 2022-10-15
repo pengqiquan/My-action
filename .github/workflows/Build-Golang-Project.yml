@@ -5,7 +5,7 @@ on:
 jobs:
   Gogs:
     name: Build Gogs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Set up Go 1.19
         uses: actions/setup-go@v3
@@ -50,7 +50,7 @@ jobs:
 
   Gitea:
     name: Build Gitea
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Set up Go 1.19
         uses: actions/setup-go@v3
@@ -93,7 +93,7 @@ jobs:
 
   Nps:
     name: Build Nps
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Set up Go 1.19
         uses: actions/setup-go@v3
@@ -125,7 +125,7 @@ jobs:
 
   Frp:
     name: Build Frp
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Set up Go 1.17.13
         uses: actions/setup-go@v2

@@ -10,6 +10,14 @@ git clone --depth=1 https://github.com/mwarning/zerotier-openwrt.git
 git clone --depth=1 https://github.com/honwen/luci-app-aliddns.git
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git
+git clone --depth=1 https://github.com/vernesong/OpenClash.git
+git clone --depth=1 https://github.com/fw876/helloworld.git
+for i in "dns2socks" "microsocks" "ipt2socks" "pdnsd-alt" "redsocks2";
+do
+    svn checkout "https://github.com/immortalwrt/packages/trunk/net/$i" "$i";
+done
+git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon.git
+git clone --depth=1 https://github.com/thinktip/luci-theme-neobird.git
 cd -
 ./scripts/feeds install -a
 

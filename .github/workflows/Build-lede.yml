@@ -6,7 +6,7 @@ on:
 
 jobs:
   x86:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Prepare environment.
         env:
@@ -64,7 +64,7 @@ jobs:
           keep_minimum_runs: 1
           
   RaspberryPi:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Prepare environment.
         env:
@@ -121,7 +121,7 @@ jobs:
           keep_minimum_runs: 1
           
   MT7621:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Prepare environment.
         env:
@@ -178,7 +178,7 @@ jobs:
           keep_minimum_runs: 1
           
   MT7621-Openwrt:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Prepare environment.
         env:
