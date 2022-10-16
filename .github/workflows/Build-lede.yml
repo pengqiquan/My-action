@@ -29,7 +29,7 @@ jobs:
         run: |
           curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lede/x86_64/.config >.config
           bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lede/diy.sh)
-          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config; make defconfig
+          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config;
 
       - name: Download package
         run: |
@@ -87,7 +87,7 @@ jobs:
         run: |
           curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lede/rpi/.config >.config
           bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lede/diy.sh)
-          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config; make defconfig
+          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config;
 
       - name: Download package
         run: |
@@ -144,7 +144,7 @@ jobs:
         run: |
           curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lede/mt7621/.config >.config
           bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lede/diy.sh)
-          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config; make defconfig
+          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config;
 
       - name: Download package
         run: |
@@ -201,7 +201,7 @@ jobs:
         run: |
           curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/openwrt/mt7621/.config >.config
           bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/openwrt/diy.sh)
-          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config; make defconfig
+          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config;
 
       - name: Download package
         run: |
@@ -258,7 +258,7 @@ jobs:
         run: |
           curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/openwrt/x86_64/.config >.config
           bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/openwrt/diy.sh)
-          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config; make defconfig
+          echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config;
 
       - name: Download package
         run: |
