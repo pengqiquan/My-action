@@ -5,20 +5,20 @@ on:
 jobs:
   Gogs:
     name: Build Gogs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - name: Set up Go 1.17.5
-        uses: actions/setup-go@v2
+      - name: Set up Go 1.19
+        uses: actions/setup-go@v3
         with:
-          go-version: 1.17.5
+          go-version: 1.19
 
-      - name: Use Node.js 16.13.1
-        uses: actions/setup-node@v2
+      - name: Use Node.js 16.17.0
+        uses: actions/setup-node@v3
         with:
-          node-version: 16.13.1
+          node-version: 16.17.0
 
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: gogs/gogs
 
@@ -36,7 +36,7 @@ jobs:
           upx -9 gogs -q
 
       - name: Upload Flies to Github Actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: Gogs
@@ -50,20 +50,20 @@ jobs:
 
   Gitea:
     name: Build Gitea
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - name: Set up Go 1.17.5
-        uses: actions/setup-go@v2
+      - name: Set up Go 1.19
+        uses: actions/setup-go@v3
         with:
-          go-version: 1.17.5
+          go-version: 1.19
 
-      - name: Use Node.js 16.13.1
-        uses: actions/setup-node@v2
+      - name: Use Node.js 16.17.0
+        uses: actions/setup-node@v3
         with:
-          node-version: 16.13.1
+          node-version: 16.17.0
 
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: go-gitea/gitea
 
@@ -79,7 +79,7 @@ jobs:
           upx -9 gitea -q
 
       - name: Upload Flies to Github Actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: Gitea
@@ -93,15 +93,15 @@ jobs:
 
   Nps:
     name: Build Nps
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - name: Set up Go 1.17.5
-        uses: actions/setup-go@v2
+      - name: Set up Go 1.19
+        uses: actions/setup-go@v3
         with:
-          go-version: 1.17.5
+          go-version: 1.19
 
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: ehang-io/nps
 
@@ -111,7 +111,7 @@ jobs:
           bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/Golang-Project/Nps/build.sh)
 
       - name: Upload Flies to Github Actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: Nps
@@ -125,15 +125,15 @@ jobs:
 
   Frp:
     name: Build Frp
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - name: Set up Go 1.17.5
+      - name: Set up Go 1.17.13
         uses: actions/setup-go@v2
         with:
-          go-version: 1.17.5
+          go-version: 1.17.13
 
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: fatedier/frp
 
@@ -144,7 +144,7 @@ jobs:
           bash package.sh
 
       - name: Upload Flies to Github Actions
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success()
         with:
           name: Frp

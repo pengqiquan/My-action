@@ -13,16 +13,17 @@
 
 <small>*绿色标志![](https://img.shields.io/badge/-passing-brightgreen)则编译通过</small>
 
-<small>*如果为 ![](https://img.shields.io/badge/-falling-red) 也并不代表完全编译失败，请进 Actions 进一步查看</small>
+<small>*如果为 ![](https://img.shields.io/badge/-falling-red) 也并不代表完全编译失败，请进 [Actions](https://github.com/1orz/My-action/actions) 进一步查看</small>
 
 
-|项目|架构|编译状态|下载链接|备注|
-|:-:|:-:|:-:|:-:|:-:|
-|LEDE|x86_64/arm/mips|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-lede?label=)|[Download](https://down.cloudorz.com/Router/lede/x86_64/)|RaspberrryPi 2-4/XiaoMi/RedMi AC2100|
-|Padavan|mips|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-Padavan?label=)|[Download](https://down.cloudorz.com/Router/padavan/x86_64/)|XiaoMi/RedMi AC2100|
-|Xray|Universal|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-Xray?label=)|[Download](https://down.cloudorz.com/Software/Xray/)||
-|XrayR|Universal|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-XrayR?label=)|[Download](https://down.cloudorz.com/Software/XrayR/)||
-|Golang Project|Universal|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-Golang-Project?label=)|[Download](https://down.cloudorz.com/Software/)|Gitea Gogs Nps Frp|
+|项目|架构|状态|备注|
+|:-:|:-:|:-:|:-:|
+|LEDE|x86_64/arm/mips|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-lede?label=)|RaspberrryPi 2-4/XiaoMi/RedMi AC2100|
+|OpenWRT|x86_64/arm/mips|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-lede?label=)|Modify|
+|Padavan|mips|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-Padavan?label=)|XiaoMi/RedMi AC2100|
+|Xray|Universal|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-Xray?label=)|Xray Core|
+|XrayR|Universal|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-XrayR?label=)|Xray Client for sspanel/v2board...|
+|Golang Project|Universal|![Compile Status](https://img.shields.io/github/workflow/status/1orz/My-action/Build-Golang-Project?label=)|Gitea Gogs Nps Frp|
 
 
 # 捐助 Donate

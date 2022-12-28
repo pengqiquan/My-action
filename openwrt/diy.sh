@@ -6,13 +6,16 @@
 rm -rf package/lean/luci-app-jd-dailybonus package/lean/luci-theme-argon
 mkdir -p package/custom && cd package/custom
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon.git
-git clone --depth=1 https://github.com/mwarning/zerotier-openwrt.git
+git clone --depth=1 https://github.com/rufengsuixing/luci-app-zerotier.git
 git clone --depth=1 https://github.com/honwen/luci-app-aliddns.git
-git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
-git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git
+git clone --depth=1 https://github.com/vernesong/OpenClash.git
+git clone --depth=1 https://github.com/fw876/helloworld.git
+git clone --depth=1 https://github.com/lisaac/luci-app-dockerman.git
+git clone --depth=1 https://github.com/lisaac/luci-lib-docker.git
+git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git
+for i in "dns2socks" "microsocks" "ipt2socks" "pdnsd-alt" "redsocks2";
+do
+    svn checkout "https://github.com/immortalwrt/packages/trunk/net/$i" "$i";
+done
 cd -
 ./scripts/feeds install -a
-
-# Modify default IP
-sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
-sed -i 's/192.168/10.0/g' package/base-files/files/bin/config_generate
