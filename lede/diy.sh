@@ -12,6 +12,9 @@ git clone --depth=1 https://github.com/thinktip/luci-theme-neobird.git
 git clone --depth=1 https://github.com/pymumu/smartdns.git
 git clone --depth=1 https://github.com/vernesong/OpenClash.git
 git clone --depth=1 https://github.com/fw876/helloworld.git
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2.git
+git clone --depth=1 https://github.com/kenzok8/small.git
 
 cd -
 ./scripts/feeds install -a
